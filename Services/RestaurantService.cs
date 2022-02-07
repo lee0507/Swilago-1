@@ -128,11 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
-<<<<<<< HEAD
-                마스터 최종 테스트
-=======
-                브랜치 최종!
->>>>>>> 40ec86452f552b86b5635bf7ca6c9b1fb8def609
+                메인 진짜 최종
 
                 if (!userEmail.Contains('@'))
                     userEmail = null;
