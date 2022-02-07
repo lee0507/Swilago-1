@@ -128,6 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
+                이게 메인
                 if (!userEmail.Contains('@'))
                     userEmail = null;
 
