@@ -128,8 +128,6 @@ namespace Swilago.Services
 
             try
             {/*
-                이게 메인인데 왜 자꾸 바뀌지?
-                
                 if (!userEmail.Contains('@'))
                     userEmail = null;
 
