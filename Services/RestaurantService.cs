@@ -47,7 +47,7 @@ namespace Swilago.Services
                 bool rowSelected;
                 foreach (var publicApiRow in publicApiTable)
                 {
-                    rowSelected = (publicApiRow.IsSelected.ToString().Equals("true")) ? true : false;
+                    rowSelected = (publicApiRow.IsSelected.ToString().Equals("true"));
                     publicApiRowList.Add(new PublicApiTable()
                     {
                         Id = publicApiRow.Id,
@@ -70,14 +70,12 @@ namespace Swilago.Services
         // 룰렛 정보 저장
         public IActionResult PostRouletteInfo(string userEmail, string rouletteResult, [FromBody] List<SelResRecord> selResRecords)
         {
-            if(!userEmail.Contains('@') || rouletteResult == null || rouletteResult == "" || selResRecords.Count() < 1)
+            if (!userEmail.Contains('@') || rouletteResult == null || rouletteResult == "" || selResRecords.Count() < 1)
                 return BadRequest();
 
             string resRecord = "";
             foreach (var selResRecord in selResRecords)
-            {
                 resRecord += selResRecord.Text.ToString() + ",";
-            }
 
             TUserRecord userRecord = new()
             {
@@ -107,9 +105,7 @@ namespace Swilago.Services
 
                 int addRank = 1;
                 foreach (var row in allStatisticsTable)
-                {
                     row.ResRank = addRank++;
-                }
 
                 payload.Message = JsonConvert.SerializeObject(allStatisticsTable, Formatting.Indented);
             }
