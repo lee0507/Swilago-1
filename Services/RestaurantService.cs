@@ -128,7 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
-                소스트리 변경 확인 된 듯?
+                이게 메인인데 왜 자꾸 바뀌지?
                 
                 if (!userEmail.Contains('@'))
                     userEmail = null;
