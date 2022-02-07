@@ -128,6 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
+                브랜치 눈물의 테스트
                 if (!userEmail.Contains('@'))
                     userEmail = null;
 
