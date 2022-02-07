@@ -128,8 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
-                소스트리 변경 확인해보기 테스트!
-                소스트리 변경 확인해보기 테스트!
+                소스트리 변경 확인 된 듯?
                 
                 if (!userEmail.Contains('@'))
                     userEmail = null;
