@@ -128,7 +128,7 @@ namespace Swilago.Services
 
             try
             {/*
-                아닌가
+                메인은 메인만 커밋 하고
 
                 if (!userEmail.Contains('@'))
                     userEmail = null;
